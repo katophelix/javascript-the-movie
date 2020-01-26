@@ -6,8 +6,8 @@ body{
     flex-direction: column;
   
 }
-.nav{
-  background-image: url(css/banner.jpg);
+.navbar{
+  background-image: url(css/1.jpg);
 }
 h1 {
   opacity: 1.5;
