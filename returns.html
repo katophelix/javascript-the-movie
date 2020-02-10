@@ -1,29 +1,187 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Returns in JavaScript</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="author" content="themesflat.com">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+ 
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+  />
+    <!-- Favicon and touch icons  -->
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="icon/favicon.ico" rel="shortcut icon">
+    <style>
+    
+        code[class*=language-], pre[class*=language-]  {
+        white-space: pre-line;
+        word-wrap: break-word;
+    }
+        </style>
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
+</head>                                 
+<body class="header-sticky">
    
-<div class="container">
-    <h2>Responsive Embed</h2>
-    <p>Create a responsive video and scale it nicely to the parent element with an 16:9 aspect ratio</p>
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/12pHgbPkb5g""></iframe>
-    </div>
-  </div>
+            <!-- Header -->            
+            <header id="header" class="header clearfix" style="margin-bottom: 20px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="header-wrap clearfix">
+                                <div id="logo" class="logo">
+                                    <a href="index.html" rel="home">
+                                        <img src="images/video/script.jpg"  style= "width: 20%" alt="image">
+                                    </a>
+                                </div><!-- /.logo -->
+                            </div>
+                        </div>           
+                                
+                  
+                        <div class="col-md-6">
+                            <div class="page-title-heading">
+                                <h1 class="title" style="font-size: 3em;">Returns in Javascript</h1>
+                            </div><!-- /.page-title-captions --> 
+                       
+                        </div><!-- /.col-md-12 -->  
+                    </div><!-- /.row -->  
+                </div><!-- /.container -->                       
+            </div><!-- /.page-title --> 
+              
+            </header><!-- /.header -->
+                    
+   
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+        <!-- Blog single -->
+        <section class="blog blog-single without-sidebar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                      
+                    </div>
+                    <div class="col-md-12">
+                        <div class="post-wrap">
+                            <article class="entry">
+                              
+                                <div class="entry-wrapper">
+                                    <div class="entry-content">
+                                        <pre><code class="language-javascript" style="width: 100%;">
+                                          var x = myFunction(4, 3);    // Function is called, return value will end up in x
+
+                                          function myFunction(a, b) {
+                                              return a * b;            // Function returns the product of a and b
+                                          }
+                                      
+                                      
+                                        
+                                        </code></pre>
+                                        
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/12pHgbPkb5g"></iframe>
+                                          </div>
+                                          <p><span class="dropcap">I</span> f omitted, the function 
+                                            does not return a value. You use the return statement to stop
+                                             execution of a function and return the value of expression. 
+                                             If expression is omitted, or no return statement is executed 
+                                             from within the function, the expression that called the current 
+                                            function is assigned the value undefined.
+                                          </p>
+                                        
+                                       
+                                    </div><!-- /entry-content -->
+                                </div>
+    
+                            </article><!-- /.entry -->
+                     
+                        </div><!-- /.post-wrap -->
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->   
+        </section>
+
+      
+    </div><!-- /.site-wrapper -->
+
+    <!-- Canvas -->
+    <div class="flat-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="text-3" class="widget widget_text">
+                            <div class="textwidget">
+                                <img src="images/video/script.jpg" style="width: 10%;" alt="Sesame Script Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /#page-footer -->
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/katharrislink"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/katophelix"><i class="fa fa-github"></i></a>
+                            <a href="mailto:katharrismail@gmail.com"><i class="fa fa-envelope"></i>
+                                <a href="https://katophelix.github.io/resume/"><i class="fa fa-laptop"></i></a>
+                                <a href="  https://www.youtube.com/channel/UCrO9ZWdhs-jQrMg1b_eng1g"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <div class="copyright-content">Sesame Script <span>•</span> Kat Harris<br>
+
+                        </div><!-- /.copyright-content -->
+                    </div><!-- /.copyright -->
+                </div>
+            </div> <!-- /.row -->
+        </div><!-- /.container -->
+    </div>
+
+    <!-- Go Top -->
+    <a class="go-top">
+    </a> 
+    
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>    
+    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+    <script type="text/javascript" src="javascript/parallax.js"></script>
+    <script type="text/javascript" src="javascript/jquery.cookie.js"></script>    
+    <script type="text/javascript" src="javascript/main.js"></script>
+</body>
 </html>
