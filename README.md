@@ -1,5 +1,5 @@
 # javascript-the-movie
- # is a redux of - much of this is still under construction, some videso are not shot yer na I am working on closed caption as well as updating some videos
+ # is a redux of - 
 
 ## Sesame Script 
 
@@ -8,7 +8,7 @@
 Link to site 
 https://katophelix.github.io/javascript-the-movie/
 
-
+much of this is still under construction, some videso are not shot yer na I am working on closed caption as well as updating some videos
 
 ### Utilis
 
